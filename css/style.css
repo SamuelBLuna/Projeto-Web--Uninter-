@@ -1,0 +1,140 @@
+/* gradiente */
+/* background: rgb(2,0,36);
+background: linear-gradient(301deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 94%); */
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: rgb(246, 238, 238);
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+body {
+    background: rgb(2,0,36);
+}
+
+.container {
+    width: 1020px;
+    height: 100vh;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 80px 0;
+}
+
+.principal {
+    position: relative;
+}
+.fixed {
+    position: fixed;
+    height: 100%;
+    display: flex;
+    gap: 50%;
+    flex-direction: column;
+}
+
+.menuPrincipal {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+
+    > .home {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+}
+
+.socialMedia {
+    > ul {
+        display: flex;
+        align-items: start;
+        gap: 45px;
+    }
+}
+
+/* Navegação do Usuario */
+
+.navi {
+    display: flex;
+    gap: 60px;
+    flex-direction: column;
+    padding-bottom: 80px;
+}
+
+
+.estudos, .sobreMim, .projetos {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    
+    > h3 {
+        font-weight: 500;
+        font-size: 28px;
+    }
+    
+    > h3::after {
+        content: '⇾';
+        font-size: 20px;
+        margin-left: 5px;
+    }
+    
+    > p {
+        text-align: justify;
+        line-height: 20px;
+        word-spacing: 3px;
+    }
+}
+
+/* Estudo */
+.estudos li {
+    padding: 20px;
+    border-radius: 15px;
+    display: flex;
+    gap: 10px;
+
+    > span {
+        font-size: 16px;
+    }
+
+    > div {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+}
+
+/* Projetos */
+.projetos li {
+    padding: 20px;
+    border-radius: 15px;
+}
+
+.projetos li a {
+    display: flex;
+    gap: 20px;
+    text-align: justify;
+    
+    > img {
+        width: 150px;
+    }
+    
+    > div {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+}
+
+.estudos li:hover, .projetos li:hover {
+    background-color: rgba(61, 145, 174,0.5);
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;    
+}
