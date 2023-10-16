@@ -22,7 +22,7 @@ body {
 }
 
 .container {
-    width: 1020px;
+    width: 1080px;
     height: 100vh;
     margin: 0 auto;
     display: grid;
@@ -65,9 +65,14 @@ body {
 
 .navi {
     display: flex;
-    gap: 60px;
+    gap: 120px;
     flex-direction: column;
     padding-bottom: 80px;
+}
+
+.navi div + div {
+    border-top: 1px solid rgba(61, 145, 174,0.5);
+    padding-top: 10px;
 }
 
 
@@ -95,6 +100,12 @@ body {
 }
 
 /* Estudo */
+.estudos ul {
+    display: flex;
+    flex-direction: column;
+    gap: 175px;
+}
+
 .estudos li {
     padding: 20px;
     border-radius: 15px;
@@ -102,7 +113,7 @@ body {
     gap: 10px;
 
     > span {
-        font-size: 16px;
+        font-size: 14px;
     }
 
     > div {
@@ -110,6 +121,12 @@ body {
         flex-direction: column;
         gap: 10px;
     }
+}
+
+.estudos div p {
+    font-size: 14px;
+    word-spacing: 3px;
+    line-height: 20px;
 }
 
 /* Projetos */
@@ -118,23 +135,46 @@ body {
     border-radius: 15px;
 }
 
-.projetos li a {
+
+.projetos li a {    
     display: flex;
     gap: 20px;
     text-align: justify;
     
     > img {
-        width: 150px;
-    }
-    
-    > div {
-        display: flex;
-        flex-direction: column;
-        gap: 10px;
-    }
+        width: 25%;
+        height: 25%;
+    background-color: rgb(61, 145, 174);
+    border: 1px solid ;
+}
+
+> div {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
 }
 
 .estudos li:hover, .projetos li:hover {
     background-color: rgba(61, 145, 174,0.5);
-    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;    
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+}
+
+/* Contato */
+
+#contact {
+    border-radius: 10px;
+    padding: 15px;
+    margin: 0 auto;
+    text-transform: uppercase;
+    word-spacing: 7px;
+    letter-spacing: 5px;
+    background-color: rgb(61, 145, 174);
+    font-weight: 700;
+    transition: 300ms;
+}
+
+#contact:hover {
+    background-color: rgb(19, 87, 110);
+    box-shadow: rgba(255, 255, 255) 0px 1px 4px, rgb(51, 51, 51) 0px 0px 0px 3px;
 }
