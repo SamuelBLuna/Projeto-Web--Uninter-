@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfólio Pessoal (Samuel Barros Luna)</title>
     <link rel="stylesheet" href="css/style.css">
-    <script src="js/index.js"></script>
+    <script src="js/index.js" defer></script>
 </head>
 <body>
     <div class="container">
@@ -68,7 +68,7 @@
                         <span>2023 - Atualmente</span>
                         <div>
                             <h4>OneBitCode - Fornação Full-Stack Javascript</h4>
-                            <p>Desenvolvimento de aplicações web des do Front-End usando HTML, CSS, Javascript e React até o Back-End utilizando Node.js e Banco de Dados SQL.</p>
+                            <p>Curso voltado a pratica no desenvolvimento de aplicações web. Des do Front-End usando HTML, CSS, Javascript e React até o Back-End utilizando Node.js e Banco de Dados SQL.</p>
                         </div>
                     </li>
                     
@@ -108,8 +108,23 @@
                     </li>
                 </ul>
             </div>
-            <a id="contact" href="contact">Entre em Contato</a>
+            <button id="contact">Entre em Contato</button>
         </section>
+    </div>
+    <div class="contato hiden">
+        <div class="form">
+            <form>
+                <p class="close">×</p>
+                <fieldset>
+                    <legend>Entre em contato</legend>
+                    <input type="text" name="nome" id="nome" placeholder="Seu nome">
+                    <input type="email" name="email" id="email" placeholder="Seu E-mail">
+                    <input type="text" name="assunto" id="assunto" placeholder="Assunto">
+                    <textarea name="mensagem" id="mensagem" rows="15" placeholder="Digite sua mensagem"></textarea>
+                </fieldset>
+                <button id="enviar">Envar Mensagem</button>
+            </form>
+        </div>
     </div>
 </body>
 </html>
