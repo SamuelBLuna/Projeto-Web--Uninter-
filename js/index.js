@@ -23,6 +23,7 @@ function meuForm(e) {
     const email = document.querySelector('#email')
     const assunto = document.querySelector('#assunto')
     const mensagem = document.querySelector('#mensagem')
+
     let itsOk = confirm(
         `
         Verifique se os dados estão corretos
@@ -33,9 +34,6 @@ function meuForm(e) {
 
     if(itsOk) {
         alert('Muito obrigado por entrar em contato')
+        closeModal()
     }
-    nome.value = ''
-    email.value = ''
-    assunto.value = ''
-    mensagem.value = ''
 }
