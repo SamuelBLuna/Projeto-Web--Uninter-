@@ -1,28 +1,31 @@
+// criação de variaveis
 const btnContato = document.getElementById('contact')
 const btnModal = document.querySelector('.close')
 const btnEnviar = document.getElementById('enviar')
 const container = document.querySelector('.container')
 const classContato = document.querySelector('.contato')
 
+// atribuindo evento à algumas variaveis
 btnContato.addEventListener('click', openModal)
 btnModal.addEventListener('click', closeModal)
 btnEnviar.addEventListener('click', meuForm)
 
+// abrindo o modal de contatos
 function openModal() {
     container.classList.toggle('hiden')
     classContato.classList.toggle('hiden')
 }
+
+// fechamendo do modal
 function closeModal() {
     container.classList.toggle('hiden')
     classContato.classList.toggle('hiden')
 }
 
-function meuForm(e) {
-    e.preventDefault()
+// verificação se os dados foram digiados correntamente
+function meuForm() {
     const nome = document.querySelector('#nome')
     const email = document.querySelector('#email')
-    const assunto = document.querySelector('#assunto')
-    const mensagem = document.querySelector('#mensagem')
 
     let itsOk = confirm(
         `

@@ -1,8 +1,4 @@
-/* gradiente */
-/* background: rgb(2,0,36);
-background: linear-gradient(301deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 94%); */
-
-
+/* reset da pagina */
 * {
     margin: 0;
     padding: 0;
@@ -25,6 +21,7 @@ body {
     background: rgb(2,0,36);
 }
 
+/* adição dos display grid */
 .container {
     width: 1080px;
     height: 100vh;
@@ -38,6 +35,8 @@ body {
 .principal {
     position: relative;
 }
+
+/* poição fixa no lado esquerdo */
 .fixed {
     position: fixed;
     height: 100%;
@@ -46,6 +45,7 @@ body {
     flex-direction: column;
 }
 
+/* ajustando posicionamento */
 .menuPrincipal {
     display: flex;
     flex-direction: column;
@@ -57,7 +57,11 @@ body {
         gap: 20px;
     }
 }
+h1 {
+    font-size: 50px;
+}
 
+/* menu de navegação lado esquedo */
 .menuNavi ul{
     display: flex;
     flex-direction: column;
@@ -73,6 +77,8 @@ body {
     padding: 10px 60px;
     transition: 300ms;
 }
+
+/* animação da navegação */
 .menuNavi ul a:hover {
     color: rgb(42, 152, 189);
     font-weight: 700;
@@ -95,6 +101,7 @@ body {
     width: 60px;
 }
 
+/* medias sociais */
 .socialMedia {
     > ul {
         display: flex;
@@ -117,7 +124,7 @@ body {
     padding-top: 10px;
 }
 
-
+/* estilização basica (estudo, sobre e projetos)  */
 .estudos, .sobreMim, .projetos {
     display: flex;
     flex-direction: column;
@@ -323,6 +330,7 @@ form p{
 }
 
 
+/* desabiitar visulização */
 .hiden {
     display: none;
 }
